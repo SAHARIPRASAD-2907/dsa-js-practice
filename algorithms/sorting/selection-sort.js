@@ -11,6 +11,9 @@ function selectionSort(A){
             }
         }
         // swap
+        if(i===pos){
+            return A;
+        }
         temp = A[i];
         A[i] = A[pos];
         A[pos] = temp
@@ -21,7 +24,7 @@ function selectionSort(A){
 
 
 function main(){
-    const A = [5,4,3,2,1]
+    const A = [7,6,5,4,3,2,1]
     console.log(selectionSort(A))
 }
 
